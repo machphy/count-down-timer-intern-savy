@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="countdown-box">
+      <h1>Countdown Timer</h1>
+      <div class="timer">
+        <div class="input-container">
+          <label for="hours"><i class="far fa-clock"></i> Hours:</label>
+          <input id="hours" type="number" min="0" max="99" value="0">
+        </div>
+        <div class="input-container">
+          <label for="minutes"><i class="far fa-clock"></i> Minutes:</label>
+          <input id="minutes" type="number" min="0" max="59" value="0">
+        </div>
+        <div class="input-container">
+          <label for="seconds"><i class="far fa-clock"></i> Seconds:</label>
+          <input id="seconds" type="number" min="0" max="59" value="0">
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="start-btn" class="btn">Start</button>
+        <button id="stop-btn" class="btn">Stop</button>
+      </div>
+      <div id="countdown"></div>
+      <audio id="alarm" src="Alarm.mp3"></audio>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
